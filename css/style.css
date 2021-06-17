@@ -121,9 +121,11 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.8);
   position: relative;
   transition: all 0.2s ease; }
-  .icon-box:hover {
+  .icon-box:hover, .icon-box:active {
     border: 2px solid #e882e8; }
   .icon-box:hover .social-icon {
+    color: #e882e8; }
+  .icon-box:active .social-icon {
     color: #e882e8; }
 
 .social-icon {
@@ -134,7 +136,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.2s ease; }
-  .social-icon:hover {
+  .social-icon:hover, .social-icon:active {
     color: #e882e8; }
 
 .heading-primary {

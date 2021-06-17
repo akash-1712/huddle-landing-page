@@ -48,10 +48,14 @@
   position: relative;
   transition: all 0.2s ease;
 
-  &:hover {
+  &:hover,
+  &:active {
     border: 2px solid $Soft-Magenta;
   }
   &:hover .social-icon {
+    color: $Soft-Magenta;
+  }
+  &:active .social-icon {
     color: $Soft-Magenta;
   }
 }
@@ -64,7 +68,8 @@
   transform: translate(-50%, -50%);
   transition: all 0.2s ease;
 
-  &:hover {
+  &:hover,
+  &:active {
     color: $Soft-Magenta;
   }
 }
