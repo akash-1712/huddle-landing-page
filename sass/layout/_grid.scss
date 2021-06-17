@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("../../images/bg-desktop.svg"),
+    linear-gradient(to right, rgba($Violet, 0.95), $Violet);
+  background-size: cover;
+  background-position: center;
+  @media only screen and (max-width: 52em) {
+    height: initial;
+    background-image: url("../../images/bg-mobile.svg"),
+      linear-gradient(to bottom, rgba($Violet, 0.95), $Violet);
+  }
+  @media only screen and (max-width: 38em) {
+    // background-image: url("../../images/bg-mobile.svg"),
+    //   linear-gradient(to bottom, rgba($Violet, 0.95), $Violet);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.container-main {
+  width: 90%;
+  height: 90%;
+  position: relative;
+}
+.container-inside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+  gap: 2rem;
+  @media only screen and (max-width: 52em) {
+    flex-direction: column;
+  }
+}

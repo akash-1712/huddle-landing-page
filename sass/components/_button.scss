@@ -1,0 +1,41 @@
+.btn {
+  height: 4rem;
+  width: 17rem;
+  padding: 1.2rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: $Violet;
+  border: none;
+  outline: none;
+  background-color: white;
+  transition: all 0.2s;
+  cursor: pointer;
+  box-shadow: 7px 6px 5px 1px rgba(0, 0, 0, 0.24);
+
+  @media only screen and (max-width: 52em) {
+    width: 55%;
+    min-width: 17rem;
+  }
+  @media only screen and (max-width: 38em) {
+    width: 60%;
+  }
+  @media only screen and (max-width: 30em) {
+    width: 70%;
+  }
+  @media only screen and (max-width: 14em) {
+    min-width: 10rem;
+    width: 100%;
+  }
+
+  &:hover,
+  &:active {
+    color: white;
+    background-color: $Soft-Magenta;
+  }
+  &:active {
+    transform: scale(0.88);
+    box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.24);
+    outline: none;
+  }
+}
