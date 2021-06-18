@@ -179,10 +179,13 @@ body {
   .btn:hover, .btn:active {
     color: white;
     background-color: #e882e8;
-    outline: none; }
+    outline: none;
+    border: none; }
   .btn:focus {
-    outline: hidden; }
+    outline: hidden;
+    border: none; }
   .btn:active {
     transform: scale(0.88);
     box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.24);
-    outline: none; }
+    outline: none;
+    border: none; }
