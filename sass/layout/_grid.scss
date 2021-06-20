@@ -6,14 +6,12 @@ body {
   height: 100vh;
   min-height: 100vh;
   width: 100vw;
-  background-image: url("../../images/bg-desktop.svg"),
-    linear-gradient(to right, rgba($Violet, 0.95), $Violet);
+  background-image: url("../../images/bg-desktop.svg"), linear-gradient(to right, rgba($Violet, 0.95), $Violet);
   background-size: cover;
   background-position: center;
   @media only screen and (max-width: 52em) {
     height: initial;
-    background-image: url("../../images/bg-mobile.svg"),
-      linear-gradient(to bottom, rgba($Violet, 0.95), $Violet);
+    background-image: url("../../images/bg-mobile.svg"), linear-gradient(to bottom, rgba($Violet, 0.95), $Violet);
   }
   @media only screen and (max-width: 38em) {
     // background-image: url("../../images/bg-mobile.svg"),
